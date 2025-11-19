@@ -51,10 +51,11 @@ G1.add_points(p1)
 G1.add_points(p2)
 
 while True:
-    os.system("cls" if os.name == "nt" else "clear")  # ← مسح الشاشة هنا
+    os.system("cls" if os.name == "nt" else "clear") 
     G1.display_grid()
 
     p1.move(G1.width, G1.height)
     p2.move(G1.width, G1.height)
+
 
     time.sleep(0.6)
