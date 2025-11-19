@@ -5,7 +5,7 @@ import time
 possibilities = [-1, 0, 1]
 
 class Point:
-    def init(self, x, y, marker="*"):
+    def __init__(self, x, y, marker="*"):
         self.x = x
         self.y = y
         self.marker = marker
@@ -18,7 +18,7 @@ class Point:
         self.y = min(max_y - 1, max(0, y_new))
 
 class Grid:
-    def init(self, width=0, height=0, points=None):
+    def __init__(self, width=0, height=0, points=None):
         if points is None:
             points = []
         self.width = width
@@ -59,3 +59,4 @@ while True:
 
 
     time.sleep(0.6)
+
